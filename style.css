@@ -12,6 +12,7 @@ body{
 
     overflow: none;
 }
+
 .calc{
     background-color: red;
 }
@@ -20,6 +21,7 @@ body{
     padding: 20px;
 text-align: end;
 border: none;
+font-size: larger;
 border-radius: 10px;
     background-color: rgb(58, 56, 56);
     color: white;

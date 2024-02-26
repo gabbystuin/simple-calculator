@@ -7,29 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="input" id="calculator">
-        <input id="display" readonly>
+    <div class="contianer" id="calculator">
+        <input id="display" placeholder="0" readonly>
    
     <div  id="keys">
-        <button class="operator-btn" onclick="appendTodisplay(`+`)">+</button>
-        <button onclick="appendTodisplay(`7`)">7</button>
-        <button onclick="appendTodisplay(`8`)">8</button>
-        <button  onclick="appendTodisplay(`9`)">9</button>
-        <button class="operator-btn" onclick="appendTodisplay(`-`)">-</button>
-        <button onclick="appendTodisplay(`4`)">4</button>
-        <button onclick="appendTodisplay(`5`)">5</button>
-        <button onclick="appendTodisplay(`6`)">6</button>
-        <button class="operator-btn" onclick="appendodisplay(`*`)">*</button>
-        <button onclick="appenTodisplay(`1`)">1</button>
-        <button onclick="appendtodisplay(`2`)">2</button>
-        <button onclick="appendtodisplay(`3`)">3</button>
-        <button class="operator-btn" onclick="appendTodisplay(`/`)">/</button>
-        <button onclick="appendTodisplay(`0`)">0</button>
-        <button  onclick="appendTodisplay(`.`)">.</button>
-        <button  onclick="calculate()" class="calc" >=</button>
-        <button class="operator-btn" onclick="cleardisplay()">C</button>
+        <button class="operator-btn" onclick="calculate(`+`)">+</button>
+        <button  class="red" onclick="calculate(7)">7</button>
+        <button  class="red" onclick="calculate(8)">8</button>
+        <button  class="red"  onclick="calculate(9)">9</button>
+        <button class="operator-btn" onclick="calculate(`-`)">-</button>
+        <button onclick="calculate(4)">4</button>
+        <button onclick="calculate(5)">5</button>
+        <button onclick="calculate(6)">6</button>
+        <button class="operator-btn" onclick="calculate(`*`)">*</button>
+        <button onclick="calculate(1)">1</button>
+        <button onclick="calculate(2)">2</button>
+        <button onclick="calculate(3)">3</button>
+        <button class="operator-btn" onclick="calculate(`/`)">/</button>
+        <button onclick="calculate(0)">0</button>
+        <button  onclick="calculate(`0`)">.</button>
+     >
+        <button  onclick="Result()"  class="calc" >=</button>
+        <button class="operator-btn" onclick="clr()">C</button>
     
-        </div>
+        </div >
     </div>   
     <script src="script .js"></script>
 </body>

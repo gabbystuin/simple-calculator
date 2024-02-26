@@ -1,8 +1,16 @@
-const display = document.getElementById ("display");
+let result=document.getElementById("display");
 
-function appendToDisplay(input){
-    display.value +=(input).vallue;
+let calculate=(number)=>{
+    result.value+=number;
 }
-function cleardisplay(){
-    display.value ="";
+let Result=()=>{
+    try{
+        result.value=eval(result.value)
+    }
+    catch(err){
+        alert("enter the valid input");
+    }
+}
+function clr(){
+result.value='';
 }
